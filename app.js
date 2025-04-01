@@ -200,7 +200,7 @@ const SenGPTGuide = () => {
               <div className="mt-5 bg-blue-50 p-4 rounded-lg">
                 <h4 className="font-bold text-blue-700">더 알아보기</h4>
                 <p className="text-sm mt-2">
-                  자세한 기능 설명은 <a href="https://docs.wrks.ai/sen" target="_blank" className="text-blue-600 hover:underline">서울시교육청 senGPT 이용안내 | Wrks</a>를 참조하세요.
+                  자세한 기능 설명은 <a href="https://docs.wrks.ai/sen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">서울시교육청 senGPT 이용안내 | Wrks</a>를 참조하세요.
                 </p>
               </div>
             </div>
@@ -221,7 +221,7 @@ const SenGPTGuide = () => {
               <div>
                 <h3 className="text-xl font-bold">계정 가입</h3>
                 <p className="mt-1">
-                  <a href="https://wrks.ai" className="text-blue-600 hover:underline" target="_blank">웍스AI 공식 사이트(wrks.ai)</a>에 접속한 후 우측 상단의 "이메일로 시작하기"를 클릭하세요. 
+                  <a href="https://wrks.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">웍스AI 공식 사이트(wrks.ai)</a>에 접속한 후 우측 상단의 "이메일로 시작하기"를 클릭하세요. 
                   서울시교육청 공식 이메일(@sen.go.kr)로 가입하고 인증 메일을 확인합니다.
                 </p>
               </div>
@@ -265,7 +265,7 @@ const SenGPTGuide = () => {
                   <h4 className="text-lg font-bold text-blue-700">계정 가입 상세 절차</h4>
                   <ol className="mt-3 space-y-3 ml-6 list-decimal">
                     <li>
-                      <a href="https://wrks.ai" target="_blank" className="text-blue-600 hover:underline">웍스AI 공식 사이트</a>에 접속합니다.
+                      <a href="https://wrks.ai" target="_blank" rel="noopener noreferrer">웍스AI 공식 사이트</a>에 접속합니다.
                     </li>
                     <li>
                       우측 상단의 "이메일로 시작하기" 버튼을 클릭합니다.
@@ -545,8 +545,8 @@ const SenGPTGuide = () => {
           <p className="text-sm">© 2025 안양 박달초 김문정</p>
           <p className="text-xs mt-1">본 가이드는 서울특별시 성북강북교육지원청 소속 교장 및 교감 선생님들을 위한 교육 자료입니다.</p>
           <div className="flex justify-center mt-3 space-x-4">
-            <a href="https://wrks.ai" target="_blank" className="text-blue-600 hover:underline text-xs">웍스AI 바로가기</a>
-            <a href="https://docs.wrks.ai/sen" target="_blank" className="text-blue-600 hover:underline text-xs">senGPT 이용안내</a>
+            <a href="https://wrks.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-xs">웍스AI 바로가기</a>
+            <a href="https://docs.wrks.ai/sen" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-xs">senGPT 이용안내</a>
             <a href="https://www.ssem.or.kr" target="_blank" className="text-blue-600 hover:underline text-xs">서울교육포털</a>
           </div>
         </footer>
@@ -556,5 +556,5 @@ const SenGPTGuide = () => {
 };
 
 // React DOM 렌더링
-const rootElement = document.getElementById("root");
-ReactDOM.render(<SenGPTGuide />, rootElement);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<SenGPTGuide />);
