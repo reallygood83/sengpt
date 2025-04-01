@@ -342,9 +342,7 @@ const SenGPTGuide = () => {
             </Card>
             <Card className="border-gray-200 transition-all duration-200 hover:shadow-lg hover:border-blue-200">
               <CardContent>
-                <h3 className="text-xl font
-
-<h3 className="text-xl font-bold mb-2">회의록 자동 정리</h3>
+                <h3 className="text-xl font-bold mb-2">회의록 자동 정리</h3>
                 <p>회의가 끝난 후 주요 논의사항과 결정사항을 텍스트로 정리하여 입력하면, 항목별로 깔끔하게 정리된 회의록 초안을 얻을 수 있습니다.</p>
               </CardContent>
             </Card>
